@@ -19,9 +19,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Maxime – Portfolio',
+      title: 'Maxime Pinto — Développeur Full Stack',
       meta: [
-        { name: 'description', content: 'Portfolio personnel de Maxime – Développeur web' }
+        { name: 'description', content: 'Développeur Full Stack PHP/Symfony & Vue.js — 7 ans d\'expérience en développement web, architecture logicielle et DevOps.' }
       ],
       link: [
         { rel: 'icon', href: '/favicon.ico' }
