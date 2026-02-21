@@ -1,60 +1,38 @@
-# Nuxt Starter Template
+# Portfolio – Maxime Pinto
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Portfolio personnel statique construit avec Nuxt 4 et Nuxt UI, deploye avec Docker et Nginx.
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+## Stack
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+- **Nuxt 4** (SSG)
+- **Nuxt UI** + Tailwind CSS 4
+- **Docker** + Docker Compose
+- **Nginx** (production)
+- **pnpm** (via corepack)
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
+## Prerequis
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+- Docker >= 29.x
+- Docker Compose >= 5.x
+- [just](https://github.com/casey/just) (`winget install Casey.Just`)
 
-## Quick Start
+Pas besoin de Node.js en local.
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/starter
-```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
-
-## Setup
-
-Make sure to install the dependencies:
+## Commandes
 
 ```bash
-pnpm install
+just dev       # Dev → http://localhost:3000
+just prod      # Prod → http://localhost:8080
+just build     # Generer le site statique (SSG)
+just install   # Installer les dependances
+just down      # Arreter les conteneurs
+just clean     # Arreter + supprimer les volumes
+just logs      # Voir les logs (dev)
+just shell     # Shell dans le conteneur dev
 ```
 
-## Development Server
+## Documentation
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Stack technique](docs/stack.md)
+- [Architecture](docs/architecture.md)
+- [Docker](docs/docker.md)
