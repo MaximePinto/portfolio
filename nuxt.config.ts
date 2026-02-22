@@ -9,14 +9,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true }
-  },
-
-  compatibilityDate: '2025-01-15',
-
   app: {
     head: {
       title: 'Maxime Pinto — Développeur Full Stack',
@@ -31,6 +23,14 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  css: ['~/assets/css/main.css'],
+
+  routeRules: {
+    '/': { prerender: true }
+  },
+
+  compatibilityDate: '2025-01-15',
 
   vite: {
     server: {

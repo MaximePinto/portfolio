@@ -5,12 +5,12 @@ const experiences = [
     company: 'Beekast (SaaS.group)',
     dates: 'Oct. 2025 – Jan. 2026',
     location: 'Lyon · Remote',
-    description: "Plateforme SaaS d'intelligence collective et d'animation de réunions interactives.",
+    description: 'Plateforme SaaS d\'intelligence collective et d\'animation de réunions interactives.',
     bullets: [
-      "Implémentation d'un rate limiter et reCAPTCHA v3 sur l'authentification",
-      "Développement d'une feature IA sur une activité du produit",
-      "Refonte complète du frontend Account (profil, settings, billing ChargeBee)",
-      "Implémentation d'un nouveau profil utilisateur avec gestion de droits"
+      'Implémentation d\'un rate limiter et reCAPTCHA v3 sur l\'authentification',
+      'Développement d\'une feature IA sur une activité du produit',
+      'Refonte complète du frontend Account (profil, settings, billing ChargeBee)',
+      'Implémentation d\'un nouveau profil utilisateur avec gestion de droits'
     ],
     stack: ['Vue 2/3', 'Node.js', 'MongoDB', 'GraphQL', 'Docker']
   },
@@ -19,14 +19,14 @@ const experiences = [
     company: 'Maline Immobilier',
     dates: 'Mai 2022 – Sept. 2025',
     location: 'Lyon · Remote',
-    description: "SaaS de prospection immobilière basé sur le Big Data.",
+    description: 'SaaS de prospection immobilière basé sur le Big Data.',
     bullets: [
-      "Refonte du SaaS v2 → v3 avec architecture CQRS et Event Sourcing",
-      "Authentification sécurisée Keycloak / JWT",
-      "Système de campagnes email automatisées (Brevo) et courrier (MySendingBox)",
-      "Système de réassignation automatique de leads",
-      "Import et génération de leads via CSV",
-      "Évolution : Backend developer → Full Stack developer"
+      'Refonte du SaaS v2 → v3 avec architecture CQRS et Event Sourcing',
+      'Authentification sécurisée Keycloak / JWT',
+      'Système de campagnes email automatisées (Brevo) et courrier (MySendingBox)',
+      'Système de réassignation automatique de leads',
+      'Import et génération de leads via CSV',
+      'Évolution : Backend developer → Full Stack developer'
     ],
     stack: ['PHP 8', 'Symfony 6', 'Vue 3', 'PostgreSQL', 'RabbitMQ', 'Docker']
   },
@@ -35,12 +35,12 @@ const experiences = [
     company: 'SQLI',
     dates: 'Avr. 2019 – Avr. 2022',
     location: 'Lyon',
-    description: "ESN — projets clients secteurs médical et pharmaceutique.",
+    description: 'ESN — projets clients secteurs médical et pharmaceutique.',
     bullets: [
-      "Refonte application web et intranet médical (Symfony 4, Angular, MongoDB)",
-      "Application d'archivage pharmaceutique avec authentification LDAPS",
-      "TMA Symfony 2.8/3.4 et Drupal 8, migrations PHP 5.2 → 7.2",
-      "Génération PDF (dompdf), exports CSV, commandes Symfony d'import/purge"
+      'Refonte application web et intranet médical (Symfony 4, Angular, MongoDB)',
+      'Application d\'archivage pharmaceutique avec authentification LDAPS',
+      'TMA Symfony 2.8/3.4 et Drupal 8, migrations PHP 5.2 → 7.2',
+      'Génération PDF (dompdf), exports CSV, commandes Symfony d\'import/purge'
     ],
     stack: ['Symfony 4', 'API Platform', 'Angular', 'MongoDB', 'MySQL', 'AWS']
   },
@@ -51,8 +51,8 @@ const experiences = [
     location: 'Lyon',
     description: '',
     bullets: [
-      "Développement d'une application interne de génération de CV (Symfony 4.3, Docker)",
-      "Authentification, génération PDF, formulaires imbriqués, autocomplétion"
+      'Développement d\'une application interne de génération de CV (Symfony 4.3, Docker)',
+      'Authentification, génération PDF, formulaires imbriqués, autocomplétion'
     ],
     stack: ['Symfony 4.3', 'Docker']
   },
@@ -63,8 +63,8 @@ const experiences = [
     location: 'Environnement nucléaire',
     description: '',
     bullets: [
-      "Gestion d'équipes et de chantiers en milieu nucléaire",
-      "Gestion de projet sous contraintes, travail d'équipe, rigueur méthodologique"
+      'Gestion d\'équipes et de chantiers en milieu nucléaire',
+      'Gestion de projet sous contraintes, travail d\'équipe, rigueur méthodologique'
     ],
     stack: []
   }
@@ -72,7 +72,10 @@ const experiences = [
 </script>
 
 <template>
-  <section id="experience" class="scroll-mt-20 py-20 sm:py-28 bg-slate-50 dark:bg-slate-950/50">
+  <section
+    id="experience"
+    class="scroll-mt-20 py-20 sm:py-28 bg-slate-50 dark:bg-slate-950/50"
+  >
     <div class="mx-auto max-w-5xl px-6">
       <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
         Expérience
@@ -106,7 +109,10 @@ const experiences = [
               <p class="mt-1 text-sm text-slate-400">
                 {{ exp.dates }} · {{ exp.location }}
               </p>
-              <p v-if="exp.description" class="mt-3 text-sm text-slate-500 dark:text-slate-400 italic">
+              <p
+                v-if="exp.description"
+                class="mt-3 text-sm text-slate-500 dark:text-slate-400 italic"
+              >
                 {{ exp.description }}
               </p>
               <ul class="mt-3 space-y-1.5">
@@ -119,7 +125,10 @@ const experiences = [
                   {{ bullet }}
                 </li>
               </ul>
-              <div v-if="exp.stack.length" class="mt-3 flex flex-wrap gap-1.5">
+              <div
+                v-if="exp.stack.length"
+                class="mt-3 flex flex-wrap gap-1.5"
+              >
                 <UBadge
                   v-for="tech in exp.stack"
                   :key="tech"

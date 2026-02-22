@@ -10,7 +10,10 @@ const skills = [
 </script>
 
 <template>
-  <section id="about" class="scroll-mt-20 py-20 sm:py-28">
+  <section
+    id="about"
+    class="scroll-mt-20 py-20 sm:py-28"
+  >
     <div class="mx-auto max-w-5xl px-6">
       <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
         À propos
@@ -43,7 +46,10 @@ const skills = [
           class="rounded-xl border border-slate-200 dark:border-slate-800 p-5"
         >
           <div class="flex items-center gap-2 mb-3">
-            <UIcon :name="group.icon" class="text-lg text-slate-500" />
+            <UIcon
+              :name="group.icon"
+              class="text-lg text-slate-500"
+            />
             <h4 class="font-medium text-slate-900 dark:text-white">
               {{ group.category }}
             </h4>
