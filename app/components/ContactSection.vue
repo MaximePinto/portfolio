@@ -14,7 +14,10 @@ const form = reactive({
 </script>
 
 <template>
-  <section id="contact" class="scroll-mt-20 py-20 sm:py-28">
+  <section
+    id="contact"
+    class="scroll-mt-20 py-20 sm:py-28"
+  >
     <div class="mx-auto max-w-5xl px-6">
       <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
         Contact
@@ -36,7 +39,10 @@ const form = reactive({
               :key="item.label"
               class="flex items-center gap-3"
             >
-              <UIcon :name="item.icon" class="text-lg text-slate-400" />
+              <UIcon
+                :name="item.icon"
+                class="text-lg text-slate-400"
+              />
               <component
                 :is="item.href ? 'a' : 'span'"
                 :href="item.href"
@@ -55,13 +61,27 @@ const form = reactive({
           <form @submit.prevent>
             <div class="space-y-5">
               <UFormField label="Nom">
-                <UInput v-model="form.name" placeholder="Votre nom" class="w-full" />
+                <UInput
+                  v-model="form.name"
+                  placeholder="Votre nom"
+                  class="w-full"
+                />
               </UFormField>
               <UFormField label="Email">
-                <UInput v-model="form.email" type="email" placeholder="votre@email.com" class="w-full" />
+                <UInput
+                  v-model="form.email"
+                  type="email"
+                  placeholder="votre@email.com"
+                  class="w-full"
+                />
               </UFormField>
               <UFormField label="Message">
-                <UTextarea v-model="form.message" placeholder="Votre message..." :rows="5" class="w-full" />
+                <UTextarea
+                  v-model="form.message"
+                  placeholder="Votre message..."
+                  :rows="5"
+                  class="w-full"
+                />
               </UFormField>
               <UButton
                 type="submit"

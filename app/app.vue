@@ -43,7 +43,10 @@ function closeMobileMenu() {
     >
       <nav class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
         <!-- Logo -->
-        <a href="#" class="text-lg font-bold text-slate-900 dark:text-white">
+        <a
+          href="#"
+          class="text-lg font-bold text-slate-900 dark:text-white"
+        >
           MP
         </a>
 
