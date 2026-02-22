@@ -124,7 +124,7 @@ function closeMobileMenu() {
     </header>
 
     <!-- Spacer for fixed header -->
-    <div class="h-16" />
+    <div class="h-16"></div>
 
     <main>
       <NuxtPage />

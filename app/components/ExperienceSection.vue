@@ -86,7 +86,7 @@ const experiences = [
 
       <div class="mt-12 relative">
         <!-- Timeline line -->
-        <div class="absolute left-3.5 top-2 bottom-2 w-px bg-slate-200 dark:bg-slate-700" />
+        <div class="absolute left-3.5 top-2 bottom-2 w-px bg-slate-200 dark:bg-slate-700"></div>
 
         <div class="space-y-12">
           <div
@@ -95,7 +95,7 @@ const experiences = [
             class="relative pl-10"
           >
             <!-- Dot -->
-            <div class="absolute left-2 top-1.5 size-3 rounded-full border-2 border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-900" />
+            <div class="absolute left-2 top-1.5 size-3 rounded-full border-2 border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-900"></div>
 
             <div>
               <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -121,7 +121,7 @@ const experiences = [
                   :key="j"
                   class="text-sm text-slate-600 dark:text-slate-300 flex gap-2"
                 >
-                  <span class="mt-1.5 shrink-0 size-1.5 rounded-full bg-slate-300 dark:bg-slate-600" />
+                  <span class="mt-1.5 shrink-0 size-1.5 rounded-full bg-slate-300 dark:bg-slate-600"></span>
                   {{ bullet }}
                 </li>
               </ul>

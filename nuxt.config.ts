@@ -50,6 +50,9 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       stylistic: {
+        indent: 2,
+        quotes: 'single',
+        semi: false,
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
