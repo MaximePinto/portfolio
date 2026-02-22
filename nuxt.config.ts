@@ -9,19 +9,11 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true }
-  },
-
-  compatibilityDate: '2025-01-15',
-
   app: {
     head: {
-      title: 'Maxime – Portfolio',
+      title: 'Maxime Pinto — Développeur Full Stack',
       meta: [
-        { name: 'description', content: 'Portfolio personnel de Maxime – Développeur web' }
+        { name: 'description', content: 'Développeur Full Stack PHP/Symfony & Vue.js — 7 ans d\'expérience en développement web, architecture logicielle et DevOps.' }
       ],
       link: [
         { rel: 'icon', href: '/favicon.ico' }
@@ -31,6 +23,14 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  css: ['~/assets/css/main.css'],
+
+  routeRules: {
+    '/': { prerender: true }
+  },
+
+  compatibilityDate: '2025-01-15',
 
   vite: {
     server: {
