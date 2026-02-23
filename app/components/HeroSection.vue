@@ -1,6 +1,6 @@
 <template>
   <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-    <div class="mx-auto max-w-4xl px-6 py-28 sm:py-36 text-center">
+    <div class="max-w-section mx-auto px-6 py-28 sm:py-36 text-center">
       <p class="text-lg text-slate-500 dark:text-slate-400 mb-4">
         Bonjour, je suis
       </p>

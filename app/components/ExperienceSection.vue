@@ -76,7 +76,7 @@ const experiences = [
     id="experience"
     class="scroll-mt-20 py-20 sm:py-28 bg-slate-50 dark:bg-slate-950/50"
   >
-    <div class="mx-auto max-w-5xl px-6">
+    <div class="max-w-section mx-auto px-6">
       <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
         Expérience
       </h2>

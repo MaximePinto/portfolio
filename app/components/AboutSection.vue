@@ -14,7 +14,7 @@ const skills = [
     id="about"
     class="scroll-mt-20 py-20 sm:py-28"
   >
-    <div class="mx-auto max-w-5xl px-6">
+    <div class="max-w-section mx-auto px-6">
       <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
         À propos
       </h2>
