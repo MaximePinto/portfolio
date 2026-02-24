@@ -19,6 +19,7 @@
       <div class="mt-10 flex flex-wrap justify-center gap-4">
         <UButton
           to="/cv/maxime-cv.pdf"
+          external
           download
           icon="i-lucide-download"
           label="Télécharger mon CV"

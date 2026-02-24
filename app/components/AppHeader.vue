@@ -46,6 +46,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <UColorModeButton variant="solid" color="neutral" size="sm" class="hidden lg:flex" />
       <UButton
         to="/cv/maxime-cv.pdf"
+        external
         download
         label="CV"
         icon="i-lucide-download"
@@ -69,6 +70,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <div class="flex items-center justify-between">
         <UButton
           to="/cv/maxime-cv.pdf"
+          external
           download
           label="Télécharger mon CV"
           icon="i-lucide-download"

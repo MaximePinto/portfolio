@@ -34,10 +34,11 @@ prod:
 build:
     docker compose -f docker/docker-compose.dev.yml exec nuxt pnpm generate
 
-# Stop all containers
+# Stop all containers and clear Nuxt/Vite cache
 down:
     docker compose -f docker/docker-compose.dev.yml down
     docker compose -f docker/docker-compose.yml down
+    rm -rf .nuxt
 
 # Stop & remove volumes (clean slate)
 clean:

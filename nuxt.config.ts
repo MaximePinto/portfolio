@@ -33,12 +33,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-15',
 
   vite: {
+    cacheDir: '.nuxt/vite',
     server: {
       hmr: {
         protocol: 'ws',
-        host: '0.0.0.0',
-        port: 24678,
-        clientPort: 24678
+        clientPort: 3000
       },
       watch: {
         usePolling: true,
