@@ -1,39 +1,61 @@
 <template>
-  <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-    <div class="max-w-section mx-auto px-6 py-28 sm:py-36 text-center">
-      <p class="text-lg text-slate-500 dark:text-slate-400 mb-4">
-        Bonjour, je suis
-      </p>
-      <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
-        Maxime Pinto
-      </h1>
-      <p class="mt-4 text-xl sm:text-2xl font-medium text-slate-600 dark:text-slate-300">
-        Développeur Full Stack PHP/Symfony &amp; Vue.js
-      </p>
-      <p class="mt-6 max-w-2xl mx-auto text-base text-slate-500 dark:text-slate-400 leading-relaxed">
-        Développeur web avec plus de 6 ans d'expérience, spécialisé en backend PHP/Symfony et
-        frontend Vue.js. Expérience confirmée sur des architectures modernes (CQRS, Event Sourcing,
-        Microservices). Reconversion réussie après un parcours en conduite de travaux, apportant
-        rigueur méthodologique et esprit d'équipe.
-      </p>
-      <div class="mt-10 flex flex-wrap justify-center gap-4">
-        <UButton
-          to="/cv/maxime-cv.pdf"
-          external
-          download
-          icon="i-lucide-download"
-          label="Télécharger mon CV"
-          size="xl"
-        />
-        <UButton
-          to="#contact"
-          label="Me contacter"
-          icon="i-lucide-mail"
-          size="xl"
-          color="neutral"
-          variant="subtle"
-        />
-      </div>
-    </div>
+  <section class="max-w-section mx-auto px-6 py-16 sm:py-24">
+    <UPageCard
+      spotlight
+      spotlight-color="primary"
+      variant="outline"
+    >
+      <template #body>
+        <div class="grid grid-cols-3 gap-1">
+            <div class="col-span-2">
+              <p class="text-5xl sm:text-6xl font-bold text-highlighted">
+                Bonjour, je suis
+              </p>
+            </div>
+            <div class="col-span-2 col-start-1 row-start-2">
+              <h1 class="font-serif text-3xl sm:text-4xl font-bold leading-tight text-muted mt-1">
+                Maxime
+              </h1>
+            </div>
+            <div class="col-span-2 col-start-1 row-start-3">
+              <h1 class="font-serif text-3xl sm:text-4xl font-bold text-muted leading-tight">
+                Pinto
+              </h1>
+            </div>
+            <div class="col-span-2 col-start-1 row-start-4">
+                <p class="mt-6 pr-18 max-w-2xl text-lg leading-relaxed text-muted">
+                  Développeur web avec plus de 6 ans d'expérience, spécialisé en backend PHP/Symfony et Vue.js.
+                </p>
+            </div>
+            <div class="col-span-2 col-start-1 row-start-5">
+                <div class="mt-10 flex flex-wrap gap-4">
+                  <UButton
+                    to="/cv/maxime-cv.pdf"
+                    external
+                    download
+                    icon="i-lucide-download"
+                    label="Télécharger mon CV"
+                    size="xl"
+                    color="neutral"
+                  />
+                  <UButton
+                    to="#contact"
+                    label="Me contacter"
+                    size="xl"
+                    color="neutral"
+                    variant="outline"
+                  />
+                </div>
+            </div>
+            <div class="row-span-3 col-start-3 row-start-2 flex items-center justify-center">
+              <img
+                src="/me.jpg"
+                alt="Maxime Pinto"
+                class="max-h-64 object-top rounded-xl"
+              >
+            </div>
+        </div>
+      </template>
+    </UPageCard>
   </section>
 </template>
