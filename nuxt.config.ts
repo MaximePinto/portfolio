@@ -2,9 +2,20 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
+    '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/fonts'
   ],
+
+  image: {
+    quality: 80,
+    format: ['webp', 'jpeg']
+  },
+
+  colorMode: {
+    classSuffix: '',
+    fallback: 'light'
+  },
 
   devtools: {
     enabled: true

@@ -43,7 +43,11 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         :ui="{ link: 'nav-underline' }"
         class="hidden lg:flex"
       />
-      <UColorModeButton variant="solid" color="neutral" size="sm" class="hidden lg:flex" />
+      <UColorModeButton variant="solid" color="neutral" size="sm" class="hidden lg:flex">
+        <template #fallback>
+          <div class="size-8" />
+        </template>
+      </UColorModeButton>
       <UButton
         to="/cv/maxime-cv.pdf"
         external
@@ -77,7 +81,11 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
           color="neutral"
           variant="solid"
         />
-        <UColorModeButton />
+        <UColorModeButton>
+          <template #fallback>
+            <div class="size-8" />
+          </template>
+        </UColorModeButton>
       </div>
     </template>
   </UHeader>
