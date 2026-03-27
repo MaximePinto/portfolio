@@ -19,12 +19,12 @@ export default defineAppConfig({
         {
           color: 'neutral',
           variant: 'solid',
-          class: 'bg-slate-900 text-white hover:bg-slate-800 active:bg-slate-800 shadow-sm',
+          class: 'bg-inverted text-inverted hover:bg-inverted/90 active:bg-inverted/90 shadow-sm',
         },
         {
           color: 'neutral',
           variant: 'outline',
-          class: 'ring-0 border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 active:bg-slate-50 shadow-sm',
+          class: 'ring-0 border border-default bg-default text-highlighted hover:bg-muted active:bg-muted shadow-sm',
         },
       ],
     },
