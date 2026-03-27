@@ -14,7 +14,9 @@
       "Bash(git add:*)",
       "mcp__nuxt-ui-remote__get-component",
       "Bash(cd:*)",
-      "mcp__nuxt-ui-remote__get-documentation-page"
+      "mcp__nuxt-ui-remote__get-documentation-page",
+      "mcp__nuxt-ui-remote__list-documentation-pages",
+      "Bash(xxd)"
     ],
     "deny": [
       "Bash(rm:*)"
